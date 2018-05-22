@@ -80,6 +80,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="QyE-fR-b9r" id="p7d-Iv-kRe"/>
+                        <outlet property="passwordTextField" destination="Fxr-Lh-yNy" id="ikw-ek-tee"/>
+                        <outlet property="usernameTextField" destination="SkF-iD-6AZ" id="oZE-tR-dTS"/>
+                        <outlet property="validationsLabel" destination="QTx-g5-MDp" id="GFA-fa-zwC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
