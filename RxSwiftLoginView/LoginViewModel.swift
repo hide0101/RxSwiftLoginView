@@ -15,7 +15,7 @@ struct LoginViewModel {
     
     var isValid: Observable <Bool> {
         return Observable.combineLatest(username.asObservable(), password.asObservable()) { usernameString,passwordString in
-            usernameString.characters.count >= 4 && passwordString.characters.count >= 4
+            usernameString.count >= 4 && passwordString.count >= 4
         }
     }
 }
