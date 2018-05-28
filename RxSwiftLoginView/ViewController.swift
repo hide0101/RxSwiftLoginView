@@ -26,6 +26,8 @@ class ViewController: UIViewController {
         _ = loginViewModel.isValid.subscribe(onNext: {[unowned self] isValid in
             self.validationsLabel.text = isValid ? "Enabled" : "Disabled"
             self.validationsLabel.textColor = isValid ? .green : .red
+            self.loginButton.isEnabled = isValid ? true : false
+            self.loginButton.backgroundColor = isValid ? UIColor.orange : UIColor.lightGray
         })
     }
 
